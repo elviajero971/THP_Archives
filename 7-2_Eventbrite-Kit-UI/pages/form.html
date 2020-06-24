@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kit UI - EventFlatty</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://kit.fontawesome.com/e5ab504795.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">Eventbrite | <small>Kit UI</small></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="navbar.html">NavBar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="footer.html">Footer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Forms</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="comments.html">Comments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="show_event.html">Show</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="left-right.html">Left/Right</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="filters.html">Filtres</a>
+        </li>
+        <li class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Banners
+          </button>
+          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="banner_home.html">Banner Home</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="banner_other.html">Banner Other</a>
+          </div>
+        </li>
+        <li class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cards & Grid
+          </button>
+          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="cards.html">Cards</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="cards_grid.html">Cards Grid</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <hr>
+
+  <h1 class="text-center">Formulaire d'inscription sur Eventbrite</h1> 
+  
+  <hr>  
+
+    <div class="col-md-5"></div>
+
+    <div class="container col-md-6 mt-5">
+
+      <h3 class="text-center">Veuillez vous enregistrer</h3>
+      <p class="text-center text-muted">Remplissez ce formulaire pour démarrer l'aventure EventBrite.</p>
+      <form>
+
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Choisir une photo</label>
+          <input type="file" class="form-control form-control-file" id="exampleFormControlFile1">
+        </div>    
+
+
+        <div class="form-group ">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Saisissez votre e-mail">
+          <small id="emailHelp" class="form-text text-muted">On ne partagera votre e-mail avec personne.</small>
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmation de mot de passe">
+        </div>    
+
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Saisissez votre prénom">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Saisissez votre nom de famille">
+          </div>
+        </div>
+      
+      <br>
+
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Saisissez votre description"></textarea>
+        </div>
+
+        <div class="text-center form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+        </div>
+
+      <br>
+      <div class="row justify-content-center ">
+        <button type="submit" class="btn btn-success btn-lg btn-lg mr-3">Valider</button>
+        </form>
+        <button type="submit" class="btn btn-primary btn-lg">Retour Accueil</button>
+      </div>
+    </div>
+    
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+
+</body>
+</html>

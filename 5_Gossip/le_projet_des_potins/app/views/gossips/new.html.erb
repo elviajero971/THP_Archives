@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+    <style>
+        .jumbotron {
+            width: 99.05vw;
+            height: 60vh;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("https://aussiegossip.com.au/wp-content/uploads/2016/07/mood-love-romance-men-males-women-females-nature-landscapes-lakes-mountains-wallpaper-1-1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .jumbotron h1, h2{
+          margin-top:210px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center text-light">
+    <% if @gossip.errors.any? %>
+      <div class="alert alert-danger" role="alert"><%= flash[:error] %></div>
+    <% end %>
+
+    <h1 style="color: #FFFFFF">Rédige ton propre potin !</h1>
+    <%= form_tag url_for(action: 'create'), method: "post", class: "col-md"  do %>
+                
+       <div class="form-group">
+        <%= label_tag 'Titre' %>
+        <%= text_field_tag 'title', "Tapez le titre de votre potin", class:"form-control" %>
+      </div>         
+      <div class="form-group">
+        <%= label_tag 'Contenu' %>
+        <%= text_field_tag 'content', "Ecrivez votre potin ici...", class:"form-control" %>
+      </div> 
+        <!-- BUTTONS -->
+      <div class="d-flex flex-row-reverse">
+        <%= submit_tag "Créer votre potin", class: "btn btn-primary m-1" %>
+        <a href=<%= gossips_path %> class="btn btn-secondary m-1">Annuler</a>
+      </div>
+        <% end %>
+    
+     </div>
+    </div>
+  </body>
+</html>

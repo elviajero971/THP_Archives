@@ -1,0 +1,45 @@
+<div class="jumbotron jumbotron-hero px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <div class="container">
+    <h1 class="mb-1 jumbotitle text-white">
+        Event Brite
+        </h1>
+    <br>
+    <br>
+    <h2><%= link_to "Créer un nouvel évènement", new_event_path, class:"btn btn-outline-light btn-lg mx-1 my-1" %></h2>
+    <br>
+    <h1 class="mb-3 text-white">Voici la liste de tes évènements :</h1>
+  </div>
+</div>
+  <% if !notice.nil? %>  
+    <div class="alert alert-primary" role="alert">
+      <p id="notice"><%= notice %></p>
+    </div>
+  <% end %>
+  <% if !flash[:success].nil? %>
+    <div class="alert alert-success" role="alert"><%= flash[:success] %></div>
+  <% end %>
+  <% if !flash[:update].nil? %>
+    <div class="alert alert-success" role="alert"><%= flash[:update] %></div>
+  <% end %>
+
+<main class="container">
+  <br>    
+    <div class="row row-cols-5 row-cols-md-3  p-md-0 m-md-0 d-flex justify-content-center">
+      <% Event.all.sort.each do |event| %>
+      <div class="card border-info text-center bg-light my-3 mx-3" style="max-width: 18rem;">
+      <%= image_tag("/images/show-event-pic.jpg", :type => :upload, 
+      :width => 280, :height => 150, :crop => :fill) %>
+        <div class="card-body">
+          <h5 class="card-title"><%= event.title %></h5>
+          <p class="card-text"><%= event.location %></p>
+          <p class="card-text"><%= event.start_date %></p>
+        </div>
+        <div class="card-footer">
+          <i class="fas fa-tools"></i>
+            <%= link_to "Plus d'informations ?", event_path(event.id), class:"btn btn-outline-info mx-1 my-1" %>
+          <i class="fas fa-eraser"></i>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</main>

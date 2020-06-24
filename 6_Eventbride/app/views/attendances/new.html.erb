@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div class="jumbotron jumbotron-hero px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <div class="container">
+    <h1 class="mb-1 jumbotitle text-white">
+        Event Brite
+        </h1>
+    <br>
+    <br>
+    <h1 class="mb-1 text-white">
+      Participer à l'évènement <%= @event.title %>
+    </h1>
+    <br>
+  </div>
+</div>
+
+ <%= link_to "Participer à l'évènement", new_charge_path(id: @event.id), class:"btn btn-success" %>
+</div>
+</div>
+  </div>
+</body>
+</html>

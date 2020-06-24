@@ -1,0 +1,2 @@
+module PicEventsHelper
+end

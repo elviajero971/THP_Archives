@@ -1,0 +1,6 @@
+=> dé à 6 faces
+
+=> dé>=5 avance de 1
+=> dé==1 recule de -1
+=> 2, 3, 4 il ne se passe rien
+=> on démarre à 0

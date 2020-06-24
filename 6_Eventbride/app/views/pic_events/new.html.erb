@@ -1,0 +1,7 @@
+<div class="card my-5">
+   <h3>Veuillez télécharger ici la photo de profil de votre évènement ?</h3>
+  <%= form_tag event_event_pics_path(@event), multipart: true do %>
+    <%= file_field_tag :event_pic %>
+    <%= submit_tag "soumettre la photo de l'évènement" %>
+  <% end %>
+</div>

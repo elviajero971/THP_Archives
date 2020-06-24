@@ -1,0 +1,33 @@
+// Place all the styles related to the gossips controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  margin:0;
+  width: 100%;
+}
+
+ h1{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  line-height: 1em; 
+  font-size: 6em; 
+  margin-bottom:20px;
+ }
+
+h2{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  line-height: 1em; 
+  font-size: 3em; 
+  margin-bottom:20px;
+ }
+
+ .a-primary{  
+  color:   blue;
+  }
+
+  .a-primary:hoover{color:  white;}

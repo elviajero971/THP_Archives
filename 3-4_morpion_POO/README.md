@@ -1,0 +1,2 @@
+Bienvenue dans le readme du projet de réalisation d'un jeu de morpion réalisé au cours de la formation THP.
+Veillez à bien ouvrir votre terminal en grand avant de lancer l'application avec "ruby app.rb"
